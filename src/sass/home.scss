@@ -1,0 +1,71 @@
+$fontSize:12px;
+
+// 引入外部sass文件
+@import 'var';
+
+//重置样式
+body,h1,h2,h3,h4,h5,h6,i,div,ul,li,a,span,b,i,dl,dd{ margin:0; padding:0;}
+
+//公共样式
+.wrap{ width:1100px;margin:0 auto;}
+body{ font:14px/22px 'Microsoft Yahei',Helvetica,Arial,STXihei,SimSun,sans-serif;}
+ul{ list-style:none;}
+
+
+// 头部
+.header{ 
+	.top{ width:100%;background:#ccc; font-size:$fontSize; background: #f2f2f2; overflow:hidden; line-height:32px; height:32px; border-bottom:1px solid #e5e5e5;
+		.top-left{ float:left;
+			span{color:#666; }
+			a{color:#ec3e7d;}
+		}
+
+		.top-right{
+			float:right;
+			li{ float:left; padding:0 12px;
+				&:hover { background-color:#fff;}
+				img{ vertical-align:middle;}
+				a{ text-decoration:none; color:#666;}
+				dl{ display:none;}
+
+				&:last-child { position:relative; 
+					.weibo{ 
+						.weiboma{  display:none; position:absolute; top:0px; left:0;  }
+						&:hover .weiboma{ display:block; width:100px; height: 100px;}
+					}
+					
+					.weixin{
+						.weixinma{ display:none; position:absolute; top:32px; left:0; width:100px; height: 100px;}
+						&:hover .weixinma{ display:block;}
+					}
+				}
+			}
+		}
+
+	}
+
+
+	.center{ width: 100%; background: #fff; position:relative;
+		.empty{ height:20px;}
+		.log{ 
+			a{ display:block; width: 170px; height: 42px}
+		}
+		.search{ width: 500px; height: 66px; position:absolute; left: 400px; top: 21px;
+			.search-input{
+				background-color:#ec3e7d; width: 346px; height: 36px; float: left;
+				
+				input{ 
+					position:relative;
+					left: 3px; top:3px;
+					border:0;
+					width: 330px; height: 24px; padding:3px 5px;}
+			}
+
+			.search-btn{ border:none; width: 90px; height: 36px; line-height:36px;
+				background-color: #ec3e7d}
+		}
+	}
+
+
+}
+

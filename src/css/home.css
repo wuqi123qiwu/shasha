@@ -1,0 +1,145 @@
+body, h1, h2, h3, h4, h5, h6, i, div, ul, li, a, span, b, i, dl, dd {
+  margin: 0;
+  padding: 0;
+}
+
+.wrap {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+body {
+  font: 14px/22px 'Microsoft Yahei',Helvetica,Arial,STXihei,SimSun,sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.header .top {
+  width: 100%;
+  background: #ccc;
+  font-size: 12px;
+  background: #f2f2f2;
+  overflow: hidden;
+  line-height: 32px;
+  height: 32px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.header .top .top-left {
+  float: left;
+}
+
+.header .top .top-left span {
+  color: #666;
+}
+
+.header .top .top-left a {
+  color: #ec3e7d;
+}
+
+.header .top .top-right {
+  float: right;
+}
+
+.header .top .top-right li {
+  float: left;
+  padding: 0 12px;
+}
+
+.header .top .top-right li:hover {
+  background-color: #fff;
+}
+
+.header .top .top-right li img {
+  vertical-align: middle;
+}
+
+.header .top .top-right li a {
+  text-decoration: none;
+  color: #666;
+}
+
+.header .top .top-right li dl {
+  display: none;
+}
+
+.header .top .top-right li:last-child {
+  position: relative;
+}
+
+.header .top .top-right li:last-child .weibo .weiboma {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0;
+}
+
+.header .top .top-right li:last-child .weibo:hover .weiboma {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+
+.header .top .top-right li:last-child .weixin .weixinma {
+  display: none;
+  position: absolute;
+  top: 32px;
+  left: 0;
+  width: 100px;
+  height: 100px;
+}
+
+.header .top .top-right li:last-child .weixin:hover .weixinma {
+  display: block;
+}
+
+.header .center {
+  width: 100%;
+  background: #fff;
+  position: relative;
+}
+
+.header .center .empty {
+  height: 20px;
+}
+
+.header .center .log a {
+  display: block;
+  width: 170px;
+  height: 42px;
+}
+
+.header .center .search {
+  width: 500px;
+  height: 66px;
+  position: absolute;
+  left: 400px;
+  top: 21px;
+}
+
+.header .center .search .search-input {
+  background-color: #ec3e7d;
+  width: 346px;
+  height: 36px;
+  float: left;
+}
+
+.header .center .search .search-input input {
+  position: relative;
+  left: 3px;
+  top: 3px;
+  border: 0;
+  width: 330px;
+  height: 24px;
+  padding: 3px 5px;
+}
+
+.header .center .search .search-btn {
+  border: none;
+  width: 90px;
+  height: 36px;
+  line-height: 36px;
+  background-color: #ec3e7d;
+}
