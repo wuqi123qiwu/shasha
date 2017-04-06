@@ -1,0 +1,107 @@
+#footer .wrap .promise ul {
+  overflow: hidden;
+  padding: 42px 0 20px 0;
+}
+
+#footer .wrap .promise ul li {
+  float: left;
+  width: 172px;
+  height: 50px;
+  margin-right: 84px;
+}
+
+#footer .wrap .promise ul li .img {
+  display: block;
+  width: 32px;
+  height: 32px;
+  float: left;
+  overflow: hidden;
+}
+
+#footer .wrap .promise ul li p {
+  float: right;
+  width: 127px;
+  font-size: 18px;
+  color: #222;
+  line-height: 22px;
+}
+
+#footer .wrap .promise ul li p span {
+  font-size: 13px;
+  color: #999999;
+}
+
+#footer .wrap .promise ul :last-child {
+  margin-right: 0;
+}
+
+#footer .wrap .center .help ul {
+  padding-top: 16px;
+  padding-bottom: 18px;
+  overflow: hidden;
+  float: left;
+}
+
+#footer .wrap .center .help ul li {
+  float: left;
+  margin-right: 90px;
+}
+
+#footer .wrap .center .help ul li a {
+  display: block;
+  width: 90px;
+  font-size: 12px;
+  line-height: 24px;
+  color: #999;
+  text-decoration: none;
+}
+
+#footer .wrap .center .help ul li b a {
+  color: #222;
+}
+
+#footer .wrap .center .erweima {
+  float: right;
+}
+
+#footer .wrap .center .erweima .weibo {
+  float: left;
+}
+
+#footer .wrap .center .erweima .weixin {
+  float: right;
+}
+
+#footer .wrap .center .erweima img {
+  width: 128px;
+  height: 128px;
+}
+
+#footer .wrap .center .erweima p {
+  line-height: 22px;
+  font-size: 12px;
+  color: #111;
+  text-align: center;
+}
+
+#footer .bottom {
+  background: #000;
+  width: 100%;
+  padding: 26px;
+}
+
+#footer .bottom .wrap p {
+  font-size: 12px;
+  color: #fff;
+}
+
+#footer .bottom .wrap p a {
+  padding: 1px 5px;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+}
+
+#footer .bottom .wrap p:last-child {
+  padding-top: 14px;
+}

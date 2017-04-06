@@ -1,0 +1,7 @@
+@import 'var';
+body,h1,h2,h3,h4,h5,h6,i,div,ul,li,p,a,span,img,b,i,dl,dd{ margin:0; padding:0;}
+.wrap{ width:1200px;margin:0 auto;}
+.page{width:1090px; margin:0 auto;}
+body{ font:14px/22px 'Microsoft Yahei',Helvetica,Arial,STXihei,SimSun,sans-serif;}
+ul{ list-style:none;}
+a{ font-size:$fontSize;}

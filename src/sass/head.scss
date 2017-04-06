@@ -1,0 +1,161 @@
+
+  @import 'var';
+// 引入外部sass文件
+
+
+//重置样式
+
+
+//公共样式
+
+
+
+// 头部
+#header{ 
+	.top{ width:100%;background:#ccc; font-size:$fontSize; background: #f2f2f2; line-height:32px; height:32px; border-bottom:1px solid #e5e5e5;
+		.top-left{ float:left;
+			span{color:#666; }
+			a{color:#ec3e7d;}
+		}
+
+		.top-right{
+			float:right;
+			li{ float:left; padding:0 12px;
+				&:hover { background-color:#fff;}
+				img{ vertical-align:middle;}
+				a{ text-decoration:none; color:#666;}
+				
+				&:nth-child(1){ position:relative;
+					dl{  box-sizing:border-box; overflow:hidden; transition: height 0.6s; position:absolute; top:32px;left:0; padding: 0  20px; width:100%; height:0px; z-index:100; background: #fff;     box-shadow: 0px 4px 8px rgba(0,0,0,.2); }
+					&:hover dl{display:block; height:160px; 
+						a:hover{ color:#ec3e7d;}
+					}
+				}
+
+				&:nth-child(2){ position:relative;
+					.carList { display:none; width: 300px; height: 70px;
+						border:1px solid #ddd; box-shadow:2px 2px 10px rgba(0,0,0,.2);
+						color:#6c6c6c; background: #fff; position:absolute; top:32px; 
+						right:0; z-index:2;
+						.car-empty{   padding: 10px 60px; line-height: 25px; text-align:center;}
+					}
+					&:hover .carList {display:block;}
+				}
+				&:last-child { position:relative; 
+					.weibo{ 
+						.weiboma{  display: none; position:absolute; top:32px; left:0; box-shadow: 2px 2px 10px rgba(0,0,0,.2); }
+						&:hover .weiboma{ display:block; width:100px; height: 100px;
+							z-index: 5;}
+					}
+					
+					.weixin{
+						.weixinma{ display:none; position:absolute; top:32px; left:0; width:100px; height: 100px; box-shadow: 2px 2px 10px rgba(0,0,0,.2);}
+						&:hover .weixinma{ display:block;width:100px; height: 100px;
+							z-index: 5;}
+					}
+				}
+			}
+		}
+
+	}
+
+
+	.center{ width: 100%; background: #fff; position:relative;
+		.empty{ height:20px;}
+		.log{ 
+			a{ display:block; width: 170px; height: 42px}
+		}
+		.search{ width: 500px; height: 66px; position:absolute; left: 400px; top: 21px; 
+			.search-input{
+				background-color:#ec3e7d; width: 346px; height: 36px; float: left;
+				
+				input{ 
+					position:relative;
+					left: 3px; top:3px;
+					border:none;
+					outline: 0;
+					width: 330px; height: 24px; padding:3px 5px;}
+			}
+
+			.search-btn{ border:none; width: 90px; height: 36px; line-height:36px; color:white; font-family: inherit;
+				background-color: #ec3e7d; outline:0; cursor:pointer;}
+			.hot-keyword{ width: 400px;   height: 30px; line-height: 30px; overflow: hidden; clear: both;  text-align: left; 
+				a{text-decoration:none;     color: #999;border-left: 1px solid #999; line-height: 14px;  height: 14px;  display: inline-block;  padding: 0 10px; margin-left: -10px; margin-right: 10px;}
+			}
+		}
+	}
+
+	.bottom { margin-top:40px;
+		.wrap{ 
+			.all-category{
+				background: #333;float: left;position: relative; width: 190px;
+				height: 36px; z-index:50; 
+				.category-header{
+					    color: #fff; font-size: 16px; position: absolute; width: 190px;   -webkit-box-sizing: border-box;    padding-left: 16px;    top: 0;    height: 36px;    line-height: 36px;    cursor: auto;
+					.category-header-icon{
+						width: 16px;    height: 20px;    margin-top: 7px;    float: left;    margin-right: 17px;
+						.line{ display:block; width: 100%;   height: 25%;    border-bottom: 1px solid #fff;}
+					}
+				}
+				
+				.category-ul{    position:absolute; top:36px; left:0; background:#fa3778; z-index:100;
+					.category-li{  color: #3e3e3e; padding:11px 14px;  line-height:30px; font-size:16px; color: #fff; width: 162px; border-bottom: 1px dotted #fe7dab; position:relative;
+						&:hover .more-content  {display:block;}
+						.category-item {  float:left; padding-left:35px; height:30px; background-image:url(../img/分类.png) ; overflow:hidden; background-repeat:no-repeat;}
+						.more-category {   display: block; float: right; font-size:20px;}
+						.clear{ height:0;  font-size:0 ; clear : both } &:hover { background:#fff;
+							.category-item { color:#fa3778;
+								&:hover { color:#333;}
+							}
+							.more-category{ color:#333;}
+							.category-item{ background-image:url(../img/分类hover.png)}
+						}
+						&:nth-child(1) .category-item{ background-position:left -5px;}
+						&:nth-child(2) .category-item{ background-position:left -40px;}
+						&:nth-child(3) .category-item{ background-position:left -71px;}
+						&:nth-child(4) .category-item{ background-position:left -104px;}
+						&:nth-child(5) .category-item{ background-position:left -136px;}
+						&:nth-child(6) .category-item{ background-position:left -172px;}
+						&:nth-child(7) .category-item{ background-position:left -203px;}
+						&:nth-child(8) .category-item{ background-position:left -237px;}
+					    &:last-child {border-bottom:1px solid #fe7dab;}
+						
+						.more-content {display:none; z-index:101;  border:1px solid #ff7dab; position:absolute; top:0; left:190px; width: 280px; padding:0px 30px 40px 30px; background:#fff;
+							a{display:inline-block; font-size:12px; line-height:10px; margin:0 4px; text-decoration:none; color:#888;
+								&:hover { color:#fa3778;}
+								&.red{ color:#fa3778;}
+							}
+							h4 { padding-top:22px; 
+								a{ font-size:14px; font-width:900; color:#444; }
+							}
+							& :nth-child(1) {text-indent:33px; margin-left:-31px;  background: #fff;}
+
+						}
+					}
+				}
+				
+
+			}
+
+			.minute-category{
+				float: left;    height: 36px;    line-height: 36px;    position: relative;    margin-left: 20px;
+				li{
+					float: left;    display: inline-block;   overflow: hidden;    padding: 0 5px;   text-align: center; 
+					&.nav-item a:hover{ color:#ec3e7d;}
+					.nav-hot{display: inline-block; width: 25px; height: 16px; background:url(../img/hot.png) no-repeat;}
+					a{ 
+						text-decoration:none; display: block;     cursor: pointer; color:#111;  font-size: 16px;
+					.i-confont{ display:inline-block; transform:rotate(-130deg); font-size :12px;}
+					}
+
+					&.nav-sep{width:20px;
+					 a{color: #eee;}
+					}
+				}
+			}
+
+			.clear{height:0; font-size:0; clear:both;}
+		}
+	}
+}
+

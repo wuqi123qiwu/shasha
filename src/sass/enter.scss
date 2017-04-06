@@ -1,0 +1,49 @@
+@import 'var';
+
+.header-main{ width: 100%;
+	.page{
+		a{  display:block; overflow:hidden;     width: 300px; height: 45px; 
+			img{float: left; height:100%;}
+		}
+		.login{ margin-top:40px; background:url('../img/login.png') no-repeat 0 center; overflow:hidden;
+			.login-page{float:right;     width: 350px; padding: 35px; margin-right: 68px; box-shadow: 0 0 5px #e1e1e1,0 0 15px #e1e1e1;
+				.title{font-family: 'Microsoft Yahei'; color: #5a5d6c; font-weight: normal; font-size: 21px;
+					.fr{ float:right;   color: #5a5d6c;     font-size: 12px;
+						a{  display: inline;  margin-left: 3px; margin-right: 3px; color: #ec3e7d; text-decoration:none;}
+					}
+				}
+				.upBox{ margin-top:40px;
+					.form-item{    height: 51px; font-size: 13px; margin-bottom:10px;
+						.username,.password{width: 340px;       outline:0; border: 1px solid #ccc;  height: 26px; line-height: 26px; padding: 4px; background:url(../img/enter-input.png) 6px -120px no-repeat; text-indent:24px;
+							&:hover{    border-color: #f9a0b4; box-shadow: 0 0 5px #fbb4b0;} 
+						}
+						.error{ display:block; height:20px;  display: none;
+							b{display:inline-block; width: 17px; height: 17px; border-radius:50%; background: #ec3e7d; color:#fff; text-align:center; vertical-align:middle;}
+							span{vertical-align:middle;}
+						}
+						&:nth-child(2) input{ background:url(../img/enter-input.png) 6px -160px no-repeat;}
+
+						.form-act{   margin-top:40px; 
+							#remembe{    height: 13px; width: 20px; vertical-align:middle; outline:0;} 
+							label{margin:0 3px 15px;vertical-align: middle;}
+							.forget{ display:inline-block; margin:0 15px; text-decoration: none; vertical-align: middle; color: #ed3f7e;}
+						}
+						.btn{ border:0;  width: 100%; background: #ec3e7d; line-height: 40px; color: #fff; font-size: 16px;}
+					}
+					.other-login{
+						p{font-size:16px; color:#333; padding-top:30px;}
+						ul{ overflow:hidden;
+							li{float:left;  width: 115px; padding: 10px 0; font-size: 12px; 
+								a{ margin-left: 3px;    text-decoration: none;     color: #3e3e3e; line-height:32px;
+									&:hover{    text-decoration: none; vertical-align: middle; color: #ed3f7e;}
+									img{    vertical-align: middle; margin-right: 5px; height: 35px;}
+								} 
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+ 	

@@ -1,0 +1,15 @@
+
+@import 'var';
+body,h1,h2,h3,h4,h5,h6,i,div,ul,li,a,span,b,i,dl,dd{ margin:0; padding:0;}
+body{height:2000px;}
+a{text-decoration:none; font-size:12px ; color:#fff; }
+.right-sidebar{ width: 38px; height: 100%; background-color: #4c4c4c; text-align:center; position:fixed; top:0; right:0;
+	.content{ height: 370px; padding-top:100px;		
+		a{display:block;  width: 18px; margin:0 auto; vertical-align:middle;}
+		.zhanghu{display:block; width: 38px; height: 38px; margin:30px 0 10px 0;
+			a{display:none; width:76px; height: 36px; line-height:36px;}
+			&:hover { background: #ec3e7d; }
+			//&:hover a{display:block;} 
+		}
+	}
+}
